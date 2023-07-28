@@ -1,0 +1,55 @@
+.quizContainer{
+  height:100vh;
+  display: grid;
+  top: 0%;
+  left: 0%;
+  grid-template-columns: 10% 80% 10%;
+
+}
+
+
+.quesTitle{
+  font-size: 22px;
+  font-weight: 900;
+  display: grid;
+  padding: 20px;
+}
+
+.answerContainer{
+  display: grid;
+
+}
+
+.answerContainer button{
+  margin: 12px;
+  width: 30%;
+  color: red ;
+  background-color: #fff ;
+  padding: 20px !important;
+  border: 1px solid black !important;
+  border-radius: 40px;
+  display:flex ;
+  justify-content: flex-start;
+}
+
+.circle{
+  border-radius: 50%;
+  border: 1px solid red !important;
+  width: 30px;
+  height: 30px;
+  place-content: center;
+  margin: 10px;
+
+}
+
+.nxtbtn{
+  background: #fff !important;
+  color: #0c8f0c !important ;
+  border: 1px solid !important;
+}
+
+.nxtbtn:hover{
+  background:#0c8f0c !important ;
+  color: #fff !important;
+  border-radius: 50px;
+}
