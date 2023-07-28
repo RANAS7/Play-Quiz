@@ -1,6 +1,6 @@
 import { Button, MenuItem, TextField } from "@material-ui/core";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import ErrorMessage from "../Components/ErrorMessage";
 import Categories from "../Data/Categories";
 import "../Styles/Home.css";
@@ -12,7 +12,10 @@ const Home = ({ name, setName, fetchQuestions }) => {
   const [difficulty, setDifficulty] = useState("");
   const [error, setError] = useState(false);
 
-  const navigateTo = useNavigate();
+
+const navigateTo = useNavigate();
+
+
 
   const handleSubmit = () => {
     if (!category || !difficulty || !name) {
@@ -21,7 +24,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
     } else {
       setError(false);
       fetchQuestions(category, difficulty);
-      navigateTo("/playQuiz");
+      navigateTo('/playQuiz')
     }
   };
 
